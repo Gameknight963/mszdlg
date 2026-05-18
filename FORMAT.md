@@ -39,7 +39,7 @@ public class DialogueTreeDTO
 }
 ```
 
-Of note: mszdlg2 and 1 replace the direct node references with an ID to eliminate recursion issues. This id is generated at mapping time by [MSZDialogueMapper](https://github.com/Gameknight963/MSZDialogueMapper). More on the mapping protocol [here](#Mapping).
+Of note: mszdlg2 and 1 replace the direct node references with an ID to eliminate recursion issues. This id is generated at mapping time by [MSZDialogueMapper](https://github.com/Gameknight963/MSZDialogueMapper). More on the mapping protocol [here](#Dialogue-Export-System).
 
 `nodes` is all the nodes the tree contains.
 
