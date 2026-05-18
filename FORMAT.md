@@ -8,7 +8,7 @@ It includes two types of files: metadata (nodes.json) and audio files.
 
 Please note that sometimes I don't follow c# naming conventions here, it is to follow JSON convention and to match the names I found in the decompiled code from Miside Zero.
 
-#### nodes.json
+### nodes.json
 
 nodes.json is serialized from the DialoguePack class:
 
@@ -105,6 +105,22 @@ Miside Zero can afford to put next nodes as `DialogueNode[]` since `DialogueNode
   ]
 }
 ```
+
+### Audio files
+
+Audio files are stored alongside nodes.json, like this:
+
+```csharp
+$"{treeIndex}_{nodeIndex}"
+```
+
+Examples: 
+
+- `0_12.wav`
+
+- `0_4.mp3`
+
+Miside Zero Dialogue Override uses bass to import audio, so it supports anything bass supports (a lot.)
 
 # Mapping
 
