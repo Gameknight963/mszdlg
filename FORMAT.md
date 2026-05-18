@@ -82,6 +82,30 @@ Miside Zero can afford to put next nodes as `DialogueNode[]` since `DialogueNode
 
 `delay` is how long the game will wait after the node is played before beginning the next node.
 
+#### Example nodes.json
+
+```json
+{
+  "PackFormat": 2,
+  "TargetGameVersion": "Alpha 0.72",
+  "trees": [
+    {
+      "name": "Start",
+      "nodes": [
+        {
+          "id": 0,
+          "nextNodeIds": [],
+          "dialogueText": "Looks like I made it alright.",
+          "speakerName": "Kiri",
+          "delay": 0.5
+        }
+      ],
+      "startNodeIds": [0]
+    }
+  ]
+}
+```
+
 # Mapping
 
 todo: write mapping documentation
